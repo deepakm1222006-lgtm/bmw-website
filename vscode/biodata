@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Biodata</h1>
+    <script>
+        function displayBiodata(){
+            var biodata={
+                name:"Deepak",
+                age:20,
+                email:"deepak@gmail.com"
+            };
+            console.log("Name:"+biodata.name);
+        }
+    </script>
+</body>
+</html>
