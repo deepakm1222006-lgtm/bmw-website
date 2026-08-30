@@ -1,0 +1,2941 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #050505;
+    color: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    line-height: 1.6;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+a {
+    color: inherit;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+
+    height: 80px;
+
+    padding:
+        0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background:
+        rgba(0, 0, 0, 0.94);
+
+    border-bottom:
+        1px solid #222;
+
+}
+
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+    text-decoration: none;
+
+}
+
+
+nav {
+
+    display: flex;
+
+    gap: 32px;
+
+}
+
+
+nav a {
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+
+}
+
+
+nav a:hover,
+nav a.active {
+
+    color: #1688ff;
+
+}
+
+
+.nav-btn {
+
+    text-decoration: none;
+
+    border:
+        1px solid #1688ff;
+
+    padding:
+        10px 20px;
+
+    transition: 0.3s;
+
+}
+
+
+.nav-btn:hover {
+
+    background: #1688ff;
+
+}
+
+
+/* =========================================
+   COMMON
+========================================= */
+
+.eyebrow {
+
+    color: #1688ff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.primary-btn {
+
+    display: inline-block;
+
+    padding:
+        15px 28px;
+
+    background: #1688ff;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.primary-btn:hover {
+
+    background: white;
+
+    color: black;
+
+}
+
+
+.secondary-btn {
+
+    display: inline-block;
+
+    padding:
+        14px 28px;
+
+    border:
+        1px solid #555;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+}
+
+
+.secondary-btn:hover {
+
+    border-color: #1688ff;
+
+    color: #1688ff;
+
+}
+
+
+.text-link {
+
+    color: white;
+
+    text-decoration: none;
+
+    border-bottom:
+        1px solid #1688ff;
+
+    padding-bottom: 5px;
+
+}
+
+
+.section-heading {
+
+    margin-bottom: 55px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: 52px;
+
+    line-height: 1.1;
+
+}
+
+
+/* =========================================
+   HOME HERO
+========================================= */
+
+.home-hero {
+
+    min-height: 100vh;
+
+    padding:
+        140px 7%
+        80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background:
+
+        radial-gradient(
+            circle at 75% 45%,
+            #172b42,
+            #080808 45%,
+            #050505 75%
+        );
+
+}
+
+
+.hero-content {
+
+    width: 42%;
+
+}
+
+
+.hero-content h1 {
+
+    font-size: 105px;
+
+    line-height: .85;
+
+    margin-bottom: 30px;
+
+}
+
+
+.hero-content h1 span {
+
+    display: block;
+
+    color: #1688ff;
+
+}
+
+
+.hero-text {
+
+    color: #999;
+
+    max-width: 500px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+.hero-image {
+
+    width: 58%;
+
+}
+
+
+.hero-image img {
+
+    width: 100%;
+
+    max-width: 850px;
+
+    filter:
+        drop-shadow(
+            0 35px 40px
+            rgba(0,0,0,.8)
+        );
+
+    transition: .5s;
+
+}
+
+
+.hero-image img:hover {
+
+    transform:
+        scale(1.04);
+
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.intro {
+
+    padding:
+        120px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+    background: #090909;
+
+}
+
+
+.intro-image {
+
+    overflow: hidden;
+
+}
+
+
+.intro-image img {
+
+    width: 100%;
+
+    height: 550px;
+
+    object-fit: cover;
+
+    transition: .5s;
+
+}
+
+
+.intro-image img:hover {
+
+    transform: scale(1.04);
+
+}
+
+
+.intro-content h2 {
+
+    font-size: 65px;
+
+    line-height: 1;
+
+    margin-bottom: 30px;
+
+}
+
+
+.intro-content h2 span {
+
+    color: #1688ff;
+
+}
+
+
+.intro-content p:not(.eyebrow) {
+
+    color: #888;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================================
+   HIGHLIGHTS
+========================================= */
+
+.highlights {
+
+    padding:
+        120px 7%;
+
+}
+
+
+.highlight-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.highlight {
+
+    padding:
+        35px 25px;
+
+    background: #101010;
+
+    border:
+        1px solid #222;
+
+    transition: .3s;
+
+}
+
+
+.highlight:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        #1688ff;
+
+}
+
+
+.highlight span {
+
+    color: #1688ff;
+
+}
+
+
+.highlight h3 {
+
+    font-size: 25px;
+
+    margin:
+        25px 0 12px;
+
+}
+
+
+.highlight p {
+
+    color: #777;
+
+}
+
+
+/* =========================================
+   FEATURED
+========================================= */
+
+.featured {
+
+    padding:
+        120px 7%;
+
+    background: #080808;
+
+}
+
+
+.model-preview {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.model-preview article {
+
+    position: relative;
+
+    height: 450px;
+
+    overflow: hidden;
+
+}
+
+
+.model-preview img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .6s;
+
+}
+
+
+.model-preview article:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+.model-preview article::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            transparent 35%,
+            rgba(0,0,0,.95)
+        );
+
+}
+
+
+.model-preview article > div {
+
+    position: absolute;
+
+    left: 25px;
+
+    bottom: 25px;
+
+    z-index: 2;
+
+}
+
+
+.model-preview p {
+
+    color: #1688ff;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.model-preview h3 {
+
+    font-size: 30px;
+
+    margin:
+        8px 0 12px;
+
+}
+
+
+.model-preview a {
+
+    text-decoration: none;
+
+    border-bottom:
+        1px solid #1688ff;
+
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.big-cta {
+
+    min-height: 500px;
+
+    padding: 100px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle,
+            #10263d,
+            #050505 65%
+        );
+
+}
+
+
+.big-cta h2 {
+
+    font-size: 70px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================
+   PAGE HERO
+========================================= */
+
+.page-hero {
+
+    min-height: 55vh;
+
+    padding:
+        160px 7%
+        80px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            120deg,
+            #0b1622,
+            #050505
+        );
+
+}
+
+
+.page-hero h1 {
+
+    font-size: 80px;
+
+    max-width: 900px;
+
+    line-height: .95;
+
+    margin-bottom: 25px;
+
+}
+
+
+.page-hero h1 span {
+
+    color: #1688ff;
+
+}
+
+
+.page-hero > p:last-child {
+
+    max-width: 600px;
+
+    color: #888;
+
+}
+
+
+/* =========================================
+   MODEL DETAILS
+========================================= */
+
+.model-detail {
+
+    padding:
+        100px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+
+.model-detail.reverse {
+
+    background: #090909;
+
+}
+
+
+.model-detail.reverse .model-photo {
+
+    order: 2;
+
+}
+
+
+.model-photo {
+
+    overflow: hidden;
+
+}
+
+
+.model-photo img {
+
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    transition: .6s;
+
+}
+
+
+.model-photo img:hover {
+
+    transform: scale(1.04);
+
+}
+
+
+.model-info h2 {
+
+    font-size: 65px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.model-info > p:not(.eyebrow) {
+
+    color: #888;
+
+    margin-bottom: 35px;
+
+}
+
+
+.specs {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.specs div {
+
+    padding:
+        20px 10px;
+
+    background: #111;
+
+    border:
+        1px solid #222;
+
+}
+
+
+.specs strong {
+
+    display: block;
+
+    color: #1688ff;
+
+    font-size: 25px;
+
+}
+
+
+.specs small {
+
+    color: #777;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================
+   CATEGORIES
+========================================= */
+
+.categories {
+
+    padding:
+        120px 7%;
+
+}
+
+
+.category-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.category-grid div {
+
+    padding: 35px;
+
+    background: #111;
+
+    border:
+        1px solid #222;
+
+}
+
+
+.category-grid h3 {
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.category-grid p {
+
+    color: #777;
+
+}
+
+
+/* =========================================
+   FULL GALLERY
+========================================= */
+
+.full-gallery {
+
+    padding:
+        80px 7%
+        120px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    grid-auto-rows: 300px;
+
+    gap: 20px;
+
+}
+
+
+.gallery-item {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.gallery-item.large {
+
+    grid-row:
+        span 2;
+
+}
+
+
+.gallery-item.wide {
+
+    grid-column:
+        span 2;
+
+}
+
+
+.gallery-item img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .6s;
+
+}
+
+
+.gallery-item:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+.gallery-item::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            transparent 35%,
+            rgba(0,0,0,.9)
+        );
+
+}
+
+
+.gallery-item div {
+
+    position: absolute;
+
+    left: 25px;
+
+    bottom: 25px;
+
+    z-index: 2;
+
+}
+
+
+.gallery-item p {
+
+    color: #1688ff;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.gallery-item h3 {
+
+    font-size: 28px;
+
+}
+
+
+/* GALLERY TEXT */
+
+.gallery-text {
+
+    padding:
+        100px 7%;
+
+    max-width: 900px;
+
+}
+
+
+.gallery-text h2 {
+
+    font-size: 60px;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+
+}
+
+
+.gallery-text h2 span {
+
+    color: #1688ff;
+
+}
+
+
+.gallery-text > p:last-child {
+
+    color: #888;
+
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about-history {
+
+    padding:
+        120px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 100px;
+
+}
+
+
+.about-history h2 {
+
+    font-size: 60px;
+
+    line-height: 1;
+
+}
+
+
+.about-history p {
+
+    color: #888;
+
+    margin-bottom: 20px;
+
+}
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.timeline {
+
+    padding:
+        120px 7%;
+
+    background: #090909;
+
+}
+
+
+.timeline-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.timeline-grid div {
+
+    border-left:
+        2px solid #1688ff;
+
+    padding:
+        20px 25px;
+
+}
+
+
+.timeline-grid span {
+
+    color: #1688ff;
+
+}
+
+
+.timeline-grid h3 {
+
+    font-size: 25px;
+
+    margin:
+        20px 0 12px;
+
+}
+
+
+.timeline-grid p {
+
+    color: #777;
+
+}
+
+
+/* =========================================
+   VALUES
+========================================= */
+
+.values {
+
+    padding:
+        120px 7%;
+
+}
+
+
+.value-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.value-grid div {
+
+    padding: 35px;
+
+    border:
+        1px solid #222;
+
+}
+
+
+.value-grid h3 {
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.value-grid p {
+
+    color: #777;
+
+}
+
+
+/* =========================================
+   TECHNOLOGY
+========================================= */
+
+.technology {
+
+    padding:
+        100px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+    background: #090909;
+
+}
+
+
+.technology-image img {
+
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+}
+
+
+.technology-content h2 {
+
+    font-size: 60px;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+
+}
+
+
+.technology-content h2 span {
+
+    color: #1688ff;
+
+}
+
+
+.technology-content p:not(.eyebrow) {
+
+    color: #888;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-section {
+
+    padding:
+        120px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 100px;
+
+}
+
+
+.contact-info h2 {
+
+    font-size: 60px;
+
+    line-height: 1;
+
+    margin-bottom: 30px;
+
+}
+
+
+.contact-info > p:not(.eyebrow) {
+
+    color: #888;
+
+    margin-bottom: 35px;
+
+}
+
+
+.contact-detail {
+
+    padding:
+        20px 0;
+
+    border-bottom:
+        1px solid #222;
+
+}
+
+
+.contact-detail span {
+
+    display: block;
+
+    color: #1688ff;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.contact-detail strong {
+
+    font-weight: normal;
+
+}
+
+
+/* FORM */
+
+.contact-form {
+
+    padding: 40px;
+
+    background: #101010;
+
+    border:
+        1px solid #222;
+
+}
+
+
+.contact-form label {
+
+    display: block;
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    margin:
+        20px 0 8px;
+
+}
+
+
+.contact-form label:first-child {
+
+    margin-top: 0;
+
+}
+
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border:
+        1px solid #333;
+
+    background: #080808;
+
+    color: white;
+
+    outline: none;
+
+    font-family: inherit;
+
+}
+
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+
+    border-color:
+        #1688ff;
+
+}
+
+
+.contact-form button {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 16px;
+
+    border: none;
+
+    background: #1688ff;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.contact-form button:hover {
+
+    background: white;
+
+    color: black;
+
+}
+
+
+/* =========================================
+   FAQ
+========================================= */
+
+.faq {
+
+    padding:
+        120px 7%;
+
+    background: #090909;
+
+}
+
+
+.faq-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.faq-grid div {
+
+    padding: 30px;
+
+    background: #111;
+
+    border:
+        1px solid #222;
+
+}
+
+
+.faq-grid h3 {
+
+    margin-bottom: 12px;
+
+}
+
+
+.faq-grid p {
+
+    color: #777;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    padding:
+        35px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-top:
+        1px solid #222;
+
+    color: #666;
+
+}
+
+
+.footer-logo {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    color: white;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        gap: 15px;
+    }
+
+
+    .hero-content {
+        width: 100%;
+    }
+
+
+    .home-hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .hero-image {
+        width: 100%;
+    }
+
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    .highlight-grid,
+    .category-grid,
+    .timeline-grid,
+    .value-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .model-preview {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .model-detail {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .model-detail.reverse .model-photo {
+        order: 0;
+    }
+
+
+    .technology {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .contact-section {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .about-history {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    header {
+
+        padding:
+            0 20px;
+
+    }
+
+
+    nav {
+        display: none;
+    }
+
+
+    .nav-btn {
+        display: none;
+    }
+
+
+    .home-hero {
+
+        padding:
+            130px 20px
+            70px;
+
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 65px;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+    }
+
+
+    .intro,
+    .technology,
+    .about-history,
+    .contact-section {
+
+        padding-left: 20px;
+
+        padding-right: 20px;
+
+    }
+
+
+    .intro {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .intro-image img {
+
+        height: 350px;
+
+    }
+
+
+    .intro-content h2,
+    .about-history h2,
+    .technology-content h2 {
+
+        font-size: 45px;
+
+    }
+
+
+    .highlight-grid,
+    .category-grid,
+    .timeline-grid,
+    .value-grid,
+    .model-preview,
+    .faq-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 40px;
+
+    }
+
+
+    .page-hero {
+
+        padding:
+            140px 20px
+            70px;
+
+    }
+
+
+    .page-hero h1 {
+
+        font-size: 55px;
+
+    }
+
+
+    .model-detail {
+
+        padding:
+            70px 20px;
+
+    }
+
+
+    .model-info h2 {
+
+        font-size: 48px;
+
+    }
+
+
+    .model-photo img {
+
+        height: 350px;
+
+    }
+
+
+    .specs {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .full-gallery {
+
+        padding:
+            50px 20px
+            80px;
+
+        grid-template-columns:
+            1fr;
+
+        grid-auto-rows:
+            300px;
+
+    }
+
+
+    .gallery-item.large,
+    .gallery-item.wide {
+
+        grid-row: auto;
+
+        grid-column: auto;
+
+    }
+
+
+    .gallery-text {
+
+        padding:
+            70px 20px;
+
+    }
+
+
+    .gallery-text h2 {
+
+        font-size: 45px;
+
+    }
+
+
+    .contact-section {
+
+        gap: 50px;
+
+    }
+
+
+    .contact-info h2 {
+
+        font-size: 48px;
+
+    }
+
+
+    .contact-form {
+
+        padding: 25px;
+
+    }
+
+
+    .big-cta h2 {
+
+        font-size: 50px;
+
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+
+    }
+
+}
+/* =====================================================
+   BMW CAR IMAGE SYSTEM
+   Perfect size for all BMW PNG images
+===================================================== */
+
+/* ---------- ALL IMAGES ---------- */
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* =====================================================
+   HOME HERO CAR
+===================================================== */
+
+.hero-image {
+    width: 55%;
+    height: 520px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 520px;
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+
+    filter:
+        drop-shadow(0 25px 25px rgba(0, 0, 0, 0.75));
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.04);
+
+    filter:
+        drop-shadow(0 35px 35px rgba(0, 0, 0, 0.9));
+}
+
+
+/* =====================================================
+   BMW MODEL SECTION
+===================================================== */
+
+.model-photo {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: transparent;
+}
+
+.model-photo img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+
+    transition:
+        transform 0.6s ease;
+}
+
+.model-photo:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =====================================================
+   FEATURED MODEL CARDS
+===================================================== */
+
+.model-preview article {
+    position: relative;
+
+    width: 100%;
+    height: 430px;
+
+    overflow: hidden;
+
+    background: #101010;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.model-preview article img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    padding: 25px;
+
+    display: block;
+
+    transition:
+        transform 0.6s ease;
+}
+
+.model-preview article:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.gallery-item {
+    position: relative;
+
+    width: 100%;
+    height: 350px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0c0c0c;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    padding: 15px;
+
+    display: block;
+
+    transition:
+        transform 0.6s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =====================================================
+   GALLERY LARGE IMAGE
+===================================================== */
+
+.gallery-item.large {
+    height: 600px;
+}
+
+.gallery-item.large img {
+    height: 600px;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   GALLERY WIDE IMAGE
+===================================================== */
+
+.gallery-item.wide {
+    height: 350px;
+}
+
+.gallery-item.wide img {
+    height: 350px;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   ABOUT / TECHNOLOGY IMAGE
+===================================================== */
+
+.technology-image {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #0b0b0b;
+}
+
+.technology-image img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+
+    transition:
+        transform 0.6s ease;
+}
+
+.technology-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =====================================================
+   IMAGE CARD EFFECT
+===================================================== */
+
+.model-preview article,
+.gallery-item,
+.model-photo,
+.technology-image {
+
+    border-radius: 4px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* =====================================================
+   IMAGE HOVER LIGHT
+===================================================== */
+
+.model-preview article::before,
+.gallery-item::before,
+.model-photo::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.04),
+            transparent 45%
+        );
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .hero-image {
+        width: 100%;
+        height: 450px;
+    }
+
+    .hero-image img {
+        height: 450px;
+    }
+
+    .model-photo {
+        height: 450px;
+    }
+
+    .model-photo img {
+        height: 450px;
+    }
+
+    .technology-image {
+        height: 450px;
+    }
+
+    .technology-image img {
+        height: 450px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .hero-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 300px;
+
+        object-fit: contain;
+    }
+
+
+    .model-photo {
+        width: 100%;
+        height: 320px;
+    }
+
+    .model-photo img {
+        width: 100%;
+        height: 320px;
+
+        object-fit: contain;
+    }
+
+
+    .model-preview article {
+        height: 330px;
+    }
+
+    .model-preview article img {
+        height: 330px;
+
+        padding: 15px;
+
+        object-fit: contain;
+    }
+
+
+    .gallery-item,
+    .gallery-item.large,
+    .gallery-item.wide {
+
+        width: 100%;
+        height: 300px;
+    }
+
+    .gallery-item img,
+    .gallery-item.large img,
+    .gallery-item.wide img {
+
+        width: 100%;
+        height: 300px;
+
+        object-fit: contain;
+
+        padding: 10px;
+    }
+
+
+    .technology-image {
+        width: 100%;
+        height: 320px;
+    }
+
+    .technology-image img {
+        width: 100%;
+        height: 320px;
+
+        object-fit: contain;
+    }
+
+}
+
+/* =========================================================
+   BMW WEBSITE - COMPLETE CSS ANIMATION PACK
+   Only CSS - No JavaScript
+========================================================= */
+
+
+/* =========================================================
+   1. SMOOTH PAGE SCROLL
+========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* =========================================================
+   2. HERO SECTION
+========================================================= */
+
+.hero-content h1 {
+    animation: titleReveal 1s ease-out;
+}
+
+.hero-content p {
+    animation: paragraphReveal 1s ease-out 0.3s both;
+}
+
+.hero-buttons {
+    animation: buttonsReveal 1s ease-out 0.6s both;
+}
+
+
+/* Hero title */
+
+@keyframes titleReveal {
+
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Hero paragraph */
+
+@keyframes paragraphReveal {
+
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Hero buttons */
+
+@keyframes buttonsReveal {
+
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   3. HERO BMW CAR
+========================================================= */
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+
+    animation:
+        carEntrance 1.5s ease-out,
+        carFloat 4s ease-in-out 1.5s infinite;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+
+}
+
+
+/* Car enters from right */
+
+@keyframes carEntrance {
+
+    0% {
+        opacity: 0;
+        transform: translateX(120px) scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+
+}
+
+
+/* Car floating */
+
+@keyframes carFloat {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Car hover */
+
+.hero-image img:hover {
+
+    transform: scale(1.05);
+
+    filter:
+        drop-shadow(
+            0 25px 30px
+            rgba(0, 0, 0, 0.7)
+        );
+
+}
+
+
+/* =========================================================
+   4. NAVIGATION ANIMATION
+========================================================= */
+
+.navbar a {
+
+    position: relative;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+.navbar a:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+.navbar a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 2px;
+
+    background: #1476ff;
+
+    transition:
+        width 0.3s ease;
+
+}
+
+
+.navbar a:hover::after {
+
+    width: 100%;
+
+}
+
+
+/* =========================================================
+   5. BUTTON ANIMATION
+========================================================= */
+
+.hero-buttons a,
+.hero-buttons button,
+.btn {
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.hero-buttons a:hover,
+.hero-buttons button:hover,
+.btn:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(0, 0, 0, 0.5);
+
+}
+
+
+/* Button shine */
+
+.hero-buttons a::before,
+.hero-buttons button::before,
+.btn::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 80%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,0.25),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    transition:
+        left 0.6s ease;
+
+}
+
+
+.hero-buttons a:hover::before,
+.hero-buttons button:hover::before,
+.btn:hover::before {
+
+    left: 130%;
+
+}
+
+
+/* =========================================================
+   6. MODEL CARDS
+========================================================= */
+
+.model-preview article {
+
+    animation:
+        cardAppear 0.8s ease-out both;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+
+}
+
+
+@keyframes cardAppear {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateY(50px)
+            scale(0.95);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+.model-preview article:hover {
+
+    transform:
+        translateY(-12px);
+
+    box-shadow:
+        0 20px 45px
+        rgba(0, 0, 0, 0.65);
+
+}
+
+
+/* =========================================================
+   7. MODEL CAR IMAGE ZOOM
+========================================================= */
+
+.model-preview article img {
+
+    transition:
+        transform 0.6s ease,
+        filter 0.6s ease;
+
+}
+
+
+.model-preview article:hover img {
+
+    transform:
+        scale(1.08);
+
+    filter:
+        brightness(1.08);
+
+}
+
+
+/* =========================================================
+   8. MODEL IMAGE
+========================================================= */
+
+.model-photo {
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.model-photo img {
+
+    object-fit: contain;
+
+    object-position: center;
+
+    transition:
+        transform 0.6s ease,
+        filter 0.6s ease;
+
+}
+
+
+.model-photo:hover img {
+
+    transform:
+        scale(1.05);
+
+    filter:
+        brightness(1.08);
+
+}
+
+
+/* =========================================================
+   9. GALLERY
+========================================================= */
+
+.gallery-item {
+
+    overflow: hidden;
+
+    animation:
+        galleryAppear 0.8s ease-out both;
+
+}
+
+
+@keyframes galleryAppear {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            scale(0.9);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            scale(1);
+
+    }
+
+}
+
+
+.gallery-item img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.7s ease,
+        filter 0.7s ease;
+
+}
+
+
+.gallery-item:hover img {
+
+    transform:
+        scale(1.08);
+
+    filter:
+        brightness(1.15);
+
+}
+
+
+/* =========================================================
+   10. SECTION TITLES
+========================================================= */
+
+.section-title {
+
+    animation:
+        sectionTitle 1s ease-out;
+
+}
+
+
+@keyframes sectionTitle {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateY(35px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =========================================================
+   11. ABOUT SECTION
+========================================================= */
+
+.about-content {
+
+    animation:
+        aboutAppear 1s ease-out;
+
+}
+
+
+@keyframes aboutAppear {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateX(-50px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            translateX(0);
+
+    }
+
+}
+
+
+/* =========================================================
+   12. CONTACT FORM
+========================================================= */
+
+.contact-form {
+
+    animation:
+        formAppear 1s ease-out;
+
+}
+
+
+@keyframes formAppear {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateY(50px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* Contact inputs */
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+
+    outline: none;
+
+    transform:
+        translateY(-2px);
+
+    border-color:
+        #1476ff;
+
+    box-shadow:
+        0 0 15px
+        rgba(20, 118, 255, 0.3);
+
+}
+
+
+/* =========================================================
+   13. BMW BLUE GLOW
+========================================================= */
+
+.bmw-glow {
+
+    animation:
+        blueGlow 2.5s
+        ease-in-out
+        infinite;
+
+}
+
+
+@keyframes blueGlow {
+
+    0% {
+
+        box-shadow:
+            0 0 5px
+            rgba(20, 118, 255, 0.2);
+
+    }
+
+    50% {
+
+        box-shadow:
+            0 0 25px
+            rgba(20, 118, 255, 0.7);
+
+    }
+
+    100% {
+
+        box-shadow:
+            0 0 5px
+            rgba(20, 118, 255, 0.2);
+
+    }
+
+}
+
+
+/* =========================================================
+   14. IMAGE HOVER
+========================================================= */
+
+img {
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+
+}
+
+
+/* =========================================================
+   15. RESPONSIVE ANIMATIONS
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .hero-image img {
+
+        animation:
+            carEntrance 1s ease-out,
+            carFloat 5s ease-in-out 1s infinite;
+
+    }
+
+
+    .model-preview article:hover {
+
+        transform:
+            translateY(-6px);
+
+    }
+
+
+    .gallery-item:hover img {
+
+        transform:
+            scale(1.04);
+
+    }
+
+}
+
+
+/* =========================================================
+   16. REDUCE ANIMATION FOR USERS WHO PREFER LESS MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        scroll-behavior: auto !important;
+
+        transition-duration: 0.01ms !important;
+
+    }
+
+}
